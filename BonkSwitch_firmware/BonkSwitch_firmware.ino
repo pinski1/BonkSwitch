@@ -17,17 +17,17 @@ const unsigned int loop_duration_us = 10000; // 100Hz
 
 
 /** Pin Map */
-#define PIN_VCC_MON        (A0)
-#define PIN_24V_MON        (A5)
-#define PIN_5V_MON        (A9)
-#define PIN_I_SW1_MON	(A1)
-#define PIN_I_SW2_MON	(A2)
+#define PIN_VCC_MON       (A0)
+#define PIN_24V_MON       (A5)
+#define PIN_5V_MON        (A4)
+#define PIN_I_SW1_MON     (A1)
+#define PIN_I_SW2_MON     (A2)
 #define PIN_EN_PSU        (13)
-#define PIN_EN_SW        (12)
+#define PIN_EN_SW         (12)
 #define PIN_SW1_EN        (11)
 #define PIN_SW2_EN        (10)
-#define PIN_FAULT        (5)
-#define PIN_SBUS_IN        (0)
+#define PIN_FAULT         (5)
+#define PIN_SBUS_IN       (0)
 
 /** Prototypes */
 unsigned int convert_ADC(int channel);
@@ -125,6 +125,7 @@ void loop(void) {
         break;
       default:
         // do nothing
+        Serial.println("hi!");
     }
     if(counter_BIST >= 39) counter_BIST = 0;
     else counter_BIST += 1;
@@ -138,8 +139,8 @@ void loop(void) {
 	// solenoid armature position estimation
 	
     // get latest RC packet
-    flag_packet_missed = rc_rx.read(&channels[0], &failSafe, &lostFrame)
-    if(flag_packet_missed == TRUE) counter_packet_missed += 1;
+    flag_packet_missed = rc_rx.read(&channels[0], &failSafe, &lostFrame);
+    if(flag_packet_missed == true) counter_packet_missed += 1;
     else if(counter_packet_missed < 5) counter_packet_missed = 0;
     else counter_packet_missed -= 5;
     
@@ -190,15 +191,15 @@ void loop(void) {
   */
 inline unsigned int convert_ADC(int channel) {
 
-  unsigned int adc_val = 0x00;
+  unsigned int adc_value = 0x00;
   const unsigned int _count = 0x04;
   const unsigned int _conv_vcc = 53711; // (3.3V/1024)/(30kΩ/500kΩ)/1µV
   const unsigned int _conv_24v = 30270; // (3.3V/1024)/(56kΩ/526kΩ)/1µV
-  const unsigned int _conv_5v = 6445; // (3.3V/1024)/(30/500)/1µV
+  const unsigned int _conv_5v = 78125; // (3.3V/1024)/(33kΩ/80kΩ)/1µV
   const unsigned int _conv_i_sw = 16113; // (3.3V/1024)/(20*0.01Ω)/1µV
   
-  for(int i = 0; i < _count; i++) adc_val += analogRead(channel);
-  adc_vale /= _count;
+  for(unsigned int i = 0; i < _count; i++) adc_value += analogRead(channel);
+  adc_value /= _count;
   
   switch (channel)
   {
@@ -210,7 +211,7 @@ inline unsigned int convert_ADC(int channel) {
       // convert to 24V, in microVolts
       adc_value *= _conv_24v;
       break;
-    case get_5V:
+    case PIN_5V_MON:
       // convert to 5V, in microVolts
       adc_value *= _conv_5v;
       break;
@@ -220,10 +221,8 @@ inline unsigned int convert_ADC(int channel) {
       adc_value *= _conv_i_sw;
       break;
     default:
-      adc_val = 0xFFFFFFFF; // impossibly large number
+      adc_value = 0xFFFFFFFF; // impossibly large number
       // error!
   }
-  return adc_val/1000; // return milliV
+  return adc_value/1000; // return milliVolts/milliAmps
 }
-
-
