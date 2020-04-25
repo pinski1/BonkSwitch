@@ -18466,20 +18466,23 @@ reflow soldering</description>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
-<part name="C2" library="rcl" deviceset="C-EU" device="C1210" value="3.3uF 100V">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_FARNELL" value="unknown"/>
+<part name="C2" library="rcl" deviceset="C-EU" device="C1210" value="2.2uF 100V">
+<attribute name="MF" value="TDK"/>
+<attribute name="MPN" value="C3225X7R2A225K230AB"/>
+<attribute name="OC_FARNELL" value="2112727"/>
+<attribute name="OC_RS" value="766-1211"/>
 </part>
-<part name="C3" library="rcl" deviceset="C-EU" device="C1210" value="3.3uF 100V">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_FARNELL" value="unknown"/>
+<part name="C3" library="rcl" deviceset="C-EU" device="C1210" value="2.2uF 100V">
+<attribute name="MF" value="TDK"/>
+<attribute name="MPN" value="C3225X7R2A225K230AB"/>
+<attribute name="OC_FARNELL" value="2112727"/>
+<attribute name="OC_RS" value="766-1211"/>
 </part>
-<part name="C11" library="rcl" deviceset="C-EU" device="C1210" value="22uF 35V">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_FARNELL" value="unknown"/>
+<part name="C11" library="rcl" deviceset="C-EU" device="C1210" value="10uF 35V">
+<attribute name="MF" value="TAIYO YUDEN"/>
+<attribute name="MPN" value="GMK325AB7106MM-T"/>
+<attribute name="OC_FARNELL" value="2309017"/>
+<attribute name="OC_RS" value="766-1194"/>
 </part>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
@@ -18512,7 +18515,7 @@ reflow soldering</description>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
 <part name="GND30" library="supply1" deviceset="GND" device=""/>
-<part name="C14" library="rcl" deviceset="C-EU" device="C0603" value="1uF">
+<part name="C14" library="rcl" deviceset="C-EU" device="C0603" value="10nF">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
@@ -18598,20 +18601,21 @@ reflow soldering</description>
 <part name="P+7" library="supply1" deviceset="VCC" device=""/>
 <part name="P+8" library="supply1" deviceset="VCC" device=""/>
 <part name="X1" library="con-amass" deviceset="XT60" device="PW-M">
-<attribute name="MF" value=""/>
+<attribute name="MF" value="Amass"/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="PCB1" library="dp_devices" deviceset="PCB_DP_RECTANGLE" device="-100X62">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
+<attribute name="MF" value="n/a"/>
+<attribute name="MPN" value="n/a"/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
 <part name="IC2" library="general" deviceset="LMR16006" device="" value="LMR16006XDDC">
 <attribute name="MF" value="TEXAS INSTRUMENTS"/>
 <attribute name="MPN" value="LMR16006XDDCR"/>
 <attribute name="OC_FARNELL" value="3007251"/>
+<attribute name="OC_RS" value="914-2986"/>
 </part>
 <part name="R5" library="rcl" deviceset="R-EU_" device="R0603" value="82k">
 <attribute name="MF" value=""/>
@@ -18631,9 +18635,10 @@ reflow soldering</description>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
 <part name="C6" library="rcl" deviceset="C-EU" device="C1210" value="10uF 35V">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_FARNELL" value="unknown"/>
+<attribute name="MF" value="TAIYO YUDEN"/>
+<attribute name="MPN" value="GMK325AB7106MM-T"/>
+<attribute name="OC_FARNELL" value="2309017"/>
+<attribute name="OC_RS" value="766-1194"/>
 </part>
 <part name="R22" library="rcl" deviceset="R-EU_" device="R0603" value="68k">
 <attribute name="MF" value=""/>
@@ -18663,17 +18668,20 @@ reflow soldering</description>
 <attribute name="MF" value="WURTH ELEKTRONIK"/>
 <attribute name="MPN" value="7447714470"/>
 <attribute name="OC_FARNELL" value="2082682"/>
+<attribute name="OC_RS" value="789-6987"/>
 </part>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
-<part name="C7" library="rcl" deviceset="C-EU" device="C1210" value="3.3uF 100V">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_FARNELL" value="unknown"/>
+<part name="C7" library="rcl" deviceset="C-EU" device="C1210" value="2.2uF 100V">
+<attribute name="MF" value="TDK"/>
+<attribute name="MPN" value="C3225X7R2A225K230AB"/>
+<attribute name="OC_FARNELL" value="2112727"/>
+<attribute name="OC_RS" value="766-1211"/>
 </part>
-<part name="C8" library="rcl" deviceset="C-EU" device="C1210" value="3.3uF 100V">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_FARNELL" value="unknown"/>
+<part name="C8" library="rcl" deviceset="C-EU" device="C1210" value="2.2uF 100V">
+<attribute name="MF" value="TDK"/>
+<attribute name="MPN" value="C3225X7R2A225K230AB"/>
+<attribute name="OC_FARNELL" value="2112727"/>
+<attribute name="OC_RS" value="766-1211"/>
 </part>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
 <part name="GND32" library="supply1" deviceset="GND" device=""/>
@@ -18744,12 +18752,12 @@ reflow soldering</description>
 </part>
 <part name="GND40" library="supply1" deviceset="GND" device=""/>
 <part name="X2" library="con-amass" deviceset="XT30" device="PW-F">
-<attribute name="MF" value=""/>
+<attribute name="MF" value="Amass"/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
 <part name="X3" library="con-amass" deviceset="XT30" device="PW-F">
-<attribute name="MF" value=""/>
+<attribute name="MF" value="Amass"/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
@@ -18818,8 +18826,8 @@ reflow soldering</description>
 <attribute name="OC_FARNELL" value="2498548"/>
 </part>
 <part name="A1" library="ThingySticks" deviceset="FEATHERWING" device="_NODIM">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
+<attribute name="MF" value="n/a"/>
+<attribute name="MPN" value="n/a"/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
 <part name="GND44" library="supply1" deviceset="GND" device=""/>
@@ -18932,7 +18940,7 @@ reflow soldering</description>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
 <part name="GND49" library="supply1" deviceset="GND" device=""/>
-<part name="Q1" library="transistor-fet" deviceset="SI2302" device="">
+<part name="Q1" library="transistor-fet" deviceset="SI2302" device="" value="SI2302CDS">
 <attribute name="MF" value="VISHAY"/>
 <attribute name="MPN" value="SI2302CDS-T1-GE3"/>
 <attribute name="OC_FARNELL" value="1684049"/>
@@ -18950,14 +18958,14 @@ reflow soldering</description>
 </part>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="A2" library="general" deviceset="FRSKY_XM+" device="">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
+<attribute name="MF" value="FrSky"/>
+<attribute name="MPN" value="XM"/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
 <part name="P+15" library="supply1" deviceset="+5V" device=""/>
 <part name="P+16" library="supply1" deviceset="+5V" device=""/>
 <part name="C26" library="rcl" deviceset="CPOL-EU" device="E" value="120uF 35V">
-<attribute name="MF" value="Panasonic"/>
+<attribute name="MF" value="PANASONIC"/>
 <attribute name="MPN" value="35SVPF120M"/>
 <attribute name="OC_FARNELL" value="2354806"/>
 <attribute name="OC_RS" value="795-5348"/>
@@ -19000,7 +19008,7 @@ Red LED for faults</text>
 <text x="124.46" y="58.42" size="1.778" layer="97" rot="MR0" align="center-left">X</text>
 <text x="330.2" y="147.32" size="1.778" layer="97" align="center-left">X</text>
 <text x="330.2" y="73.66" size="1.778" layer="97" align="center-left">X</text>
-<text x="238.76" y="198.12" size="1.778" layer="97">SS is ~250mS</text>
+<text x="238.76" y="198.12" size="1.778" layer="97">SS is ~25mS</text>
 <text x="167.64" y="25.4" size="1.778" layer="97" align="center-left">X</text>
 <text x="167.64" y="27.94" size="1.778" layer="97" align="center-left">X</text>
 <text x="124.46" y="27.94" size="1.778" layer="97" rot="MR0" align="center-left">X</text>
@@ -19075,16 +19083,19 @@ Red LED for faults</text>
 <attribute name="OC_FARNELL" x="187.96" y="231.14" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="187.96" y="231.14" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="187.96" y="231.14" size="1.778" layer="96" display="off"/>
+<attribute name="OC_RS" x="187.96" y="231.14" size="1.778" layer="96" rot="MR0" display="off"/>
 </instance>
 <instance part="C3" gate="G$1" x="195.58" y="223.52" rot="MR0">
 <attribute name="OC_FARNELL" x="195.58" y="223.52" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="195.58" y="223.52" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="195.58" y="223.52" size="1.778" layer="96" display="off"/>
+<attribute name="OC_RS" x="195.58" y="223.52" size="1.778" layer="96" rot="MR0" display="off"/>
 </instance>
 <instance part="C11" gate="G$1" x="342.9" y="210.82">
 <attribute name="OC_FARNELL" x="342.9" y="210.82" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="342.9" y="210.82" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="342.9" y="210.82" size="1.778" layer="96" display="off"/>
+<attribute name="OC_RS" x="342.9" y="210.82" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND23" gate="1" x="195.58" y="203.2"/>
 <instance part="GND24" gate="1" x="187.96" y="203.2"/>
@@ -19217,6 +19228,7 @@ Red LED for faults</text>
 <attribute name="OC_FARNELL" x="175.26" y="116.84" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="175.26" y="116.84" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="175.26" y="116.84" size="1.778" layer="96" display="off"/>
+<attribute name="OC_RS" x="175.26" y="116.84" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R5" gate="G$1" x="152.4" y="114.3" rot="R90">
 <attribute name="OC_FARNELL" x="152.4" y="114.3" size="1.778" layer="96" display="off"/>
@@ -19239,6 +19251,7 @@ Red LED for faults</text>
 <attribute name="OC_FARNELL" x="231.14" y="101.6" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="231.14" y="101.6" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="231.14" y="101.6" size="1.778" layer="96" display="off"/>
+<attribute name="OC_RS" x="231.14" y="101.6" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R22" gate="G$1" x="223.52" y="109.22" rot="R90">
 <attribute name="OC_FARNELL" x="223.52" y="109.22" size="1.778" layer="96" display="off"/>
@@ -19268,17 +19281,20 @@ Red LED for faults</text>
 <attribute name="OC_FARNELL" x="210.82" y="116.84" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="210.82" y="116.84" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="210.82" y="116.84" size="1.778" layer="96" display="off"/>
+<attribute name="OC_RS" x="210.82" y="116.84" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND18" gate="1" x="198.12" y="83.82"/>
 <instance part="C7" gate="G$1" x="137.16" y="111.76" rot="MR0">
 <attribute name="OC_FARNELL" x="137.16" y="111.76" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="137.16" y="111.76" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="137.16" y="111.76" size="1.778" layer="96" display="off"/>
+<attribute name="OC_RS" x="137.16" y="111.76" size="1.778" layer="96" rot="MR0" display="off"/>
 </instance>
 <instance part="C8" gate="G$1" x="144.78" y="101.6" rot="MR0">
 <attribute name="OC_FARNELL" x="144.78" y="101.6" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="144.78" y="101.6" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="144.78" y="101.6" size="1.778" layer="96" display="off"/>
+<attribute name="OC_RS" x="144.78" y="101.6" size="1.778" layer="96" rot="MR0" display="off"/>
 </instance>
 <instance part="GND20" gate="1" x="144.78" y="88.9"/>
 <instance part="GND32" gate="1" x="137.16" y="88.9"/>
