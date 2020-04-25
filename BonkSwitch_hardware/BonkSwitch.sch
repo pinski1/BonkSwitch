@@ -18971,6 +18971,7 @@ reflow soldering</description>
 <attribute name="OC_RS" value="795-5348"/>
 </part>
 <part name="GND55" library="supply1" deviceset="GND" device=""/>
+<part name="GND25" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -19476,10 +19477,10 @@ Red LED for faults</text>
 </instance>
 <instance part="GND36" gate="1" x="25.4" y="17.78"/>
 <instance part="GND48" gate="1" x="17.78" y="17.78"/>
-<instance part="R27" gate="G$1" x="63.5" y="43.18" rot="MR270">
-<attribute name="OC_FARNELL" x="63.5" y="43.18" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="63.5" y="43.18" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="63.5" y="43.18" size="1.778" layer="96" display="off"/>
+<instance part="R27" gate="G$1" x="63.5" y="22.86" rot="R90">
+<attribute name="OC_FARNELL" x="63.5" y="22.86" size="1.778" layer="96" rot="MR180" display="off"/>
+<attribute name="MF" x="63.5" y="22.86" size="1.778" layer="96" rot="MR180" display="off"/>
+<attribute name="MPN" x="63.5" y="22.86" size="1.778" layer="96" rot="MR180" display="off"/>
 </instance>
 <instance part="C22" gate="G$1" x="78.74" y="22.86" rot="MR0">
 <attribute name="OC_FARNELL" x="78.74" y="22.86" size="1.778" layer="96" display="off"/>
@@ -19583,6 +19584,7 @@ Red LED for faults</text>
 <attribute name="OC_RS" x="335.28" y="220.98" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND55" gate="1" x="335.28" y="195.58"/>
+<instance part="GND25" gate="1" x="63.5" y="12.7"/>
 </instances>
 <busses>
 </busses>
@@ -19879,6 +19881,11 @@ Red LED for faults</text>
 <pinref part="C26" gate="G$1" pin="-"/>
 <wire x1="335.28" y1="215.9" x2="335.28" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="GND55" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND25" gate="1" pin="GND"/>
+<wire x1="63.5" y1="17.78" x2="63.5" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="R27" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="VCC" class="1">
@@ -20365,13 +20372,9 @@ Red LED for faults</text>
 <pinref part="C9" gate="G$1" pin="1"/>
 <wire x1="53.34" y1="53.34" x2="53.34" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="50.8" x2="73.66" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="53.34" x2="63.5" y2="53.34" width="0.1524" layer="91"/>
 <junction x="53.34" y="53.34"/>
 <pinref part="P+12" gate="1" pin="+5V"/>
-<pinref part="R27" gate="G$1" pin="1"/>
-<wire x1="63.5" y1="53.34" x2="53.34" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="48.26" x2="63.5" y2="53.34" width="0.1524" layer="91"/>
-<junction x="63.5" y="53.34"/>
+<wire x1="73.66" y1="53.34" x2="53.34" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="A2" gate="G$1" pin="VDC"/>
 </segment>
 <segment>
@@ -20459,7 +20462,7 @@ Red LED for faults</text>
 <label x="55.88" y="30.48" size="1.778" layer="95"/>
 <pinref part="R27" gate="G$1" pin="2"/>
 <wire x1="63.5" y1="30.48" x2="66.04" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="38.1" x2="63.5" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="27.94" x2="63.5" y2="30.48" width="0.1524" layer="91"/>
 <junction x="63.5" y="30.48"/>
 <pinref part="A2" gate="G$1" pin="DATA"/>
 </segment>
