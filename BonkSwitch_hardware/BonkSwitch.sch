@@ -17777,8 +17777,8 @@ at 30/07/2012 17:45:58</description>
 <wire x1="-10.16" y1="-10.16" x2="10.16" y2="-10.16" width="0.4064" layer="94"/>
 <wire x1="10.16" y1="-10.16" x2="10.16" y2="10.16" width="0.4064" layer="94"/>
 <wire x1="10.16" y1="10.16" x2="-10.16" y2="10.16" width="0.4064" layer="94"/>
-<text x="-10.16" y="12.7" size="1.778" layer="95" ratio="7" rot="SMR180">&gt;NAME</text>
-<text x="-10.16" y="-12.7" size="1.778" layer="96" ratio="7" rot="SR0">&gt;VALUE</text>
+<text x="-10.16" y="12.7" size="1.778" layer="95" rot="SMR180">&gt;NAME</text>
+<text x="-10.16" y="-12.7" size="1.778" layer="96" rot="SR0">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -18476,19 +18476,13 @@ reflow soldering</description>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="C11" library="rcl" deviceset="C-EU" device="C1210" value="47uF 35V">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_FARNELL" value="unknown"/>
-</part>
-<part name="C12" library="rcl" deviceset="C-EU" device="C1210" value="47uF 35V">
+<part name="C11" library="rcl" deviceset="C-EU" device="C1210" value="22uF 35V">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
-<part name="GND25" library="supply1" deviceset="GND" device=""/>
 <part name="GND26" library="supply1" deviceset="GND" device=""/>
 <part name="R14" library="rcl" deviceset="R-EU_" device="R0603" value="130k">
 <attribute name="MF" value=""/>
@@ -18561,12 +18555,11 @@ reflow soldering</description>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" deviceset="+24V" device=""/>
 <part name="P+1" library="supply1" deviceset="+24V" device=""/>
-<part name="R1" library="rcl" deviceset="R-EU_" device="R0805" value="2k2">
+<part name="R1" library="rcl" deviceset="R-EU_" device="R0603" value="2k2">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="P+2" library="supply1" deviceset="+24V" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="R3" library="rcl" deviceset="R-EU_" device="R0805" value="10R">
 <attribute name="MF" value=""/>
@@ -18580,12 +18573,11 @@ reflow soldering</description>
 </part>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" deviceset="+24V" device=""/>
-<part name="R20" library="rcl" deviceset="R-EU_" device="R0805" value="2k2">
+<part name="R20" library="rcl" deviceset="R-EU_" device="R0603" value="2k2">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="P+6" library="supply1" deviceset="+24V" device=""/>
 <part name="R21" library="rcl" deviceset="R-EU_" device="R2512" value="0R01">
 <attribute name="MF" value="BOURNS"/>
 <attribute name="MPN" value="CRA2512-FZ-R010ELF"/>
@@ -18616,10 +18608,10 @@ reflow soldering</description>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="IC2" library="general" deviceset="LMR16006" device="">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_FARNELL" value="unknown"/>
+<part name="IC2" library="general" deviceset="LMR16006" device="" value="LMR16006XDDC">
+<attribute name="MF" value="TEXAS INSTRUMENTS"/>
+<attribute name="MPN" value="LMR16006XDDCR"/>
+<attribute name="OC_FARNELL" value="3007251"/>
 </part>
 <part name="R5" library="rcl" deviceset="R-EU_" device="R0603" value="82k">
 <attribute name="MF" value=""/>
@@ -18890,15 +18882,17 @@ reflow soldering</description>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
 <part name="GND52" library="supply1" deviceset="GND" device=""/>
-<part name="IC5" library="general" deviceset="LMP8640" device="">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_FARNELL" value="unknown"/>
+<part name="IC5" library="general" deviceset="LMP8640" device="" value="LMP8640MK-T">
+<attribute name="MF" value="TEXAS INSTRUMENTS"/>
+<attribute name="MPN" value="LMP8640MK-T/NOPB"/>
+<attribute name="OC_FARNELL" value="3005385"/>
+<attribute name="OC_RS" value="824-7083"/>
 </part>
-<part name="IC4" library="general" deviceset="LMP8640" device="">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_FARNELL" value="unknown"/>
+<part name="IC4" library="general" deviceset="LMP8640" device="" value="LMP8640MK-T">
+<attribute name="MF" value="TEXAS INSTRUMENTS"/>
+<attribute name="MPN" value="LMP8640MK-T/NOPB"/>
+<attribute name="OC_FARNELL" value="3005385"/>
+<attribute name="OC_RS" value="824-7083"/>
 </part>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
@@ -18938,7 +18932,11 @@ reflow soldering</description>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
 <part name="GND49" library="supply1" deviceset="GND" device=""/>
-<part name="Q1" library="transistor-fet" deviceset="SI2302" device=""/>
+<part name="Q1" library="transistor-fet" deviceset="SI2302" device="">
+<attribute name="MF" value="VISHAY"/>
+<attribute name="MPN" value="SI2302CDS-T1-GE3"/>
+<attribute name="OC_FARNELL" value="1684049"/>
+</part>
 <part name="GND54" library="supply1" deviceset="GND" device=""/>
 <part name="R34" library="rcl" deviceset="R-EU_" device="R0603" value="10k">
 <attribute name="MF" value=""/>
@@ -18951,8 +18949,20 @@ reflow soldering</description>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
-<part name="A2" library="general" deviceset="FRSKY_XM+" device=""/>
-<part name="U$1" library="general" deviceset="LOGO" device=""/>
+<part name="A2" library="general" deviceset="FRSKY_XM+" device="">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_FARNELL" value="unknown"/>
+</part>
+<part name="P+15" library="supply1" deviceset="+5V" device=""/>
+<part name="P+16" library="supply1" deviceset="+5V" device=""/>
+<part name="C26" library="rcl" deviceset="CPOL-EU" device="E" value="120uF 35V">
+<attribute name="MF" value="Panasonic"/>
+<attribute name="MPN" value="35SVPF120M"/>
+<attribute name="OC_FARNELL" value="2354806"/>
+<attribute name="OC_RS" value="795-5348"/>
+</part>
+<part name="GND55" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -19071,20 +19081,14 @@ Red LED for faults</text>
 <attribute name="MF" x="195.58" y="223.52" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="195.58" y="223.52" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="C11" gate="G$1" x="335.28" y="220.98">
-<attribute name="OC_FARNELL" x="335.28" y="220.98" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="335.28" y="220.98" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="335.28" y="220.98" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="C12" gate="G$1" x="342.9" y="213.36">
-<attribute name="OC_FARNELL" x="342.9" y="213.36" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="342.9" y="213.36" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="342.9" y="213.36" size="1.778" layer="96" display="off"/>
+<instance part="C11" gate="G$1" x="342.9" y="210.82">
+<attribute name="OC_FARNELL" x="342.9" y="210.82" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="342.9" y="210.82" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="342.9" y="210.82" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND23" gate="1" x="195.58" y="203.2"/>
 <instance part="GND24" gate="1" x="187.96" y="203.2"/>
-<instance part="GND25" gate="1" x="342.9" y="195.58"/>
-<instance part="GND26" gate="1" x="335.28" y="195.58"/>
+<instance part="GND26" gate="1" x="342.9" y="195.58"/>
 <instance part="R14" gate="G$1" x="215.9" y="228.6" rot="R90">
 <attribute name="OC_FARNELL" x="215.9" y="228.6" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="215.9" y="228.6" size="1.778" layer="96" display="off"/>
@@ -19119,18 +19123,18 @@ Red LED for faults</text>
 <attribute name="MPN" x="241.3" y="213.36" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND29" gate="1" x="241.3" y="203.2"/>
-<instance part="P+3" gate="1" x="355.6" y="236.22" rot="MR0"/>
-<instance part="LD1" gate="G$1" x="350.52" y="220.98" rot="MR0">
-<attribute name="OC_FARNELL" x="350.52" y="220.98" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="350.52" y="220.98" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="350.52" y="220.98" size="1.778" layer="96" display="off"/>
+<instance part="P+3" gate="1" x="363.22" y="236.22" rot="MR0"/>
+<instance part="LD1" gate="G$1" x="358.14" y="220.98" rot="MR0">
+<attribute name="OC_FARNELL" x="358.14" y="220.98" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="358.14" y="220.98" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="358.14" y="220.98" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="R18" gate="G$1" x="350.52" y="205.74" rot="R90">
-<attribute name="OC_FARNELL" x="350.52" y="205.74" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="350.52" y="205.74" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="350.52" y="205.74" size="1.778" layer="96" display="off"/>
+<instance part="R18" gate="G$1" x="358.14" y="205.74" rot="R90">
+<attribute name="OC_FARNELL" x="358.14" y="205.74" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="358.14" y="205.74" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="358.14" y="205.74" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="GND31" gate="1" x="350.52" y="195.58"/>
+<instance part="GND31" gate="1" x="358.14" y="195.58"/>
 <instance part="R10" gate="G$1" x="68.58" y="132.08" rot="R90">
 <attribute name="OC_FARNELL" x="68.58" y="132.08" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="68.58" y="132.08" size="1.778" layer="96" display="off"/>
@@ -19161,7 +19165,6 @@ Red LED for faults</text>
 <attribute name="MF" x="360.68" y="154.94" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="360.68" y="154.94" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="P+2" gate="1" x="360.68" y="175.26"/>
 <instance part="GND4" gate="1" x="347.98" y="33.02"/>
 <instance part="R3" gate="G$1" x="332.74" y="45.72" rot="MR0">
 <attribute name="OC_FARNELL" x="332.74" y="45.72" size="1.778" layer="96" rot="MR180" display="off"/>
@@ -19180,7 +19183,6 @@ Red LED for faults</text>
 <attribute name="MF" x="360.68" y="81.28" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="360.68" y="81.28" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="P+6" gate="1" x="360.68" y="99.06"/>
 <instance part="R21" gate="G$1" x="353.06" y="81.28" rot="R90">
 <attribute name="OC_FARNELL" x="353.06" y="81.28" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="353.06" y="81.28" size="1.778" layer="96" display="off"/>
@@ -19488,11 +19490,13 @@ Red LED for faults</text>
 <attribute name="OC_FARNELL" x="317.5" y="78.74" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="317.5" y="78.74" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="317.5" y="78.74" size="1.778" layer="96" display="off"/>
+<attribute name="OC_RS" x="317.5" y="78.74" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="IC4" gate="G$1" x="317.5" y="152.4">
 <attribute name="OC_FARNELL" x="317.5" y="152.4" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="317.5" y="152.4" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="317.5" y="152.4" size="1.778" layer="96" display="off"/>
+<attribute name="OC_RS" x="317.5" y="152.4" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="+3V1" gate="G$1" x="121.92" y="78.74"/>
 <instance part="+3V2" gate="G$1" x="302.26" y="99.06"/>
@@ -19504,10 +19508,10 @@ Red LED for faults</text>
 <attribute name="OC_RS" x="170.18" y="213.36" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND53" gate="1" x="170.18" y="203.2"/>
-<instance part="TP1" gate="G$1" x="360.68" y="228.6">
-<attribute name="OC_FARNELL" x="360.68" y="228.6" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="360.68" y="228.6" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="360.68" y="228.6" size="1.778" layer="96" display="off"/>
+<instance part="TP1" gate="G$1" x="368.3" y="228.6">
+<attribute name="OC_FARNELL" x="368.3" y="228.6" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="368.3" y="228.6" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="368.3" y="228.6" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="TP2" gate="G$1" x="248.92" y="116.84">
 <attribute name="OC_FARNELL" x="248.92" y="116.84" size="1.778" layer="96" display="off"/>
@@ -19532,7 +19536,11 @@ Red LED for faults</text>
 <attribute name="MPN" x="129.54" y="73.66" size="1.778" layer="96" rot="MR270" display="off"/>
 </instance>
 <instance part="GND49" gate="1" x="139.7" y="73.66" rot="MR270"/>
-<instance part="Q1" gate="G$1" x="208.28" y="180.34" rot="MR0"/>
+<instance part="Q1" gate="G$1" x="208.28" y="180.34" rot="MR0">
+<attribute name="OC_FARNELL" x="208.28" y="180.34" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="208.28" y="180.34" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="208.28" y="180.34" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND54" gate="1" x="208.28" y="170.18"/>
 <instance part="R34" gate="G$1" x="228.6" y="185.42" rot="R270">
 <attribute name="OC_FARNELL" x="228.6" y="185.42" size="1.778" layer="96" display="off"/>
@@ -19545,7 +19553,20 @@ Red LED for faults</text>
 <attribute name="MPN" x="220.98" y="177.8" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="+3V5" gate="G$1" x="228.6" y="195.58" rot="MR0"/>
-<instance part="A2" gate="G$1" x="38.1" y="25.4"/>
+<instance part="A2" gate="G$1" x="38.1" y="25.4">
+<attribute name="OC_FARNELL" x="38.1" y="25.4" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="38.1" y="25.4" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="38.1" y="25.4" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="P+15" gate="1" x="360.68" y="175.26"/>
+<instance part="P+16" gate="1" x="360.68" y="99.06"/>
+<instance part="C26" gate="G$1" x="335.28" y="220.98">
+<attribute name="OC_FARNELL" x="335.28" y="220.98" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="335.28" y="220.98" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="335.28" y="220.98" size="1.778" layer="96" display="off"/>
+<attribute name="OC_RS" x="335.28" y="220.98" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="GND55" gate="1" x="335.28" y="195.58"/>
 </instances>
 <busses>
 </busses>
@@ -19600,13 +19621,8 @@ Red LED for faults</text>
 </segment>
 <segment>
 <pinref part="C11" gate="G$1" pin="2"/>
-<wire x1="335.28" y1="215.9" x2="335.28" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="205.74" x2="342.9" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="GND26" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="GND25" gate="1" pin="GND"/>
-<pinref part="C12" gate="G$1" pin="2"/>
-<wire x1="342.9" y1="198.12" x2="342.9" y2="208.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND27" gate="1" pin="GND"/>
@@ -19631,7 +19647,7 @@ Red LED for faults</text>
 <segment>
 <pinref part="R18" gate="G$1" pin="1"/>
 <pinref part="GND31" gate="1" pin="GND"/>
-<wire x1="350.52" y1="200.66" x2="350.52" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="358.14" y1="200.66" x2="358.14" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R19" gate="G$1" pin="1"/>
@@ -19843,6 +19859,11 @@ Red LED for faults</text>
 <pinref part="GND54" gate="1" pin="GND"/>
 <wire x1="208.28" y1="175.26" x2="208.28" y2="172.72" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="C26" gate="G$1" pin="-"/>
+<wire x1="335.28" y1="215.9" x2="335.28" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="GND55" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="VCC" class="1">
 <segment>
@@ -19998,31 +20019,31 @@ Red LED for faults</text>
 <segment>
 <pinref part="L1" gate="G$1" pin="2"/>
 <wire x1="314.96" y1="228.6" x2="320.04" y2="228.6" width="0.1524" layer="91"/>
-<pinref part="C12" gate="G$1" pin="1"/>
 <wire x1="320.04" y1="228.6" x2="327.66" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="327.66" y1="228.6" x2="335.28" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="342.9" y1="215.9" x2="342.9" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="342.9" y1="228.6" x2="335.28" y2="228.6" width="0.1524" layer="91"/>
-<pinref part="C11" gate="G$1" pin="1"/>
-<wire x1="335.28" y1="228.6" x2="335.28" y2="223.52" width="0.1524" layer="91"/>
-<junction x="335.28" y="228.6"/>
+<wire x1="358.14" y1="228.6" x2="342.9" y2="228.6" width="0.1524" layer="91"/>
 <pinref part="R17" gate="G$1" pin="2"/>
+<wire x1="342.9" y1="228.6" x2="335.28" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="335.28" y1="228.6" x2="327.66" y2="228.6" width="0.1524" layer="91"/>
 <wire x1="327.66" y1="226.06" x2="327.66" y2="228.6" width="0.1524" layer="91"/>
 <junction x="320.04" y="228.6"/>
 <pinref part="C13" gate="G$1" pin="1"/>
 <wire x1="320.04" y1="228.6" x2="320.04" y2="223.52" width="0.1524" layer="91"/>
 <junction x="327.66" y="228.6"/>
-<wire x1="342.9" y1="228.6" x2="350.52" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="350.52" y1="228.6" x2="355.6" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="355.6" y1="228.6" x2="355.6" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="358.14" y1="228.6" x2="363.22" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="363.22" y1="228.6" x2="363.22" y2="233.68" width="0.1524" layer="91"/>
 <pinref part="P+3" gate="1" pin="+24V"/>
-<junction x="342.9" y="228.6"/>
-<junction x="350.52" y="228.6"/>
+<junction x="358.14" y="228.6"/>
 <pinref part="LD1" gate="G$1" pin="A"/>
-<wire x1="350.52" y1="223.52" x2="350.52" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="355.6" y1="228.6" x2="360.68" y2="228.6" width="0.1524" layer="91"/>
-<junction x="355.6" y="228.6"/>
+<wire x1="358.14" y1="223.52" x2="358.14" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="363.22" y1="228.6" x2="368.3" y2="228.6" width="0.1524" layer="91"/>
+<junction x="363.22" y="228.6"/>
 <pinref part="TP1" gate="G$1" pin="1"/>
+<pinref part="C26" gate="G$1" pin="+"/>
+<wire x1="335.28" y1="223.52" x2="335.28" y2="228.6" width="0.1524" layer="91"/>
+<junction x="335.28" y="228.6"/>
+<pinref part="C11" gate="G$1" pin="1"/>
+<wire x1="342.9" y1="213.36" x2="342.9" y2="228.6" width="0.1524" layer="91"/>
+<junction x="342.9" y="228.6"/>
 </segment>
 <segment>
 <pinref part="P+1" gate="1" pin="+24V"/>
@@ -20032,21 +20053,11 @@ Red LED for faults</text>
 <junction x="353.06" y="160.02"/>
 </segment>
 <segment>
-<wire x1="360.68" y1="170.18" x2="360.68" y2="172.72" width="0.1524" layer="91"/>
-<pinref part="P+2" gate="1" pin="+24V"/>
-<pinref part="LD4" gate="G$1" pin="A"/>
-</segment>
-<segment>
 <pinref part="P+5" gate="1" pin="+24V"/>
 <wire x1="353.06" y1="86.36" x2="353.06" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="R21" gate="G$1" pin="2"/>
 <pinref part="SH3" gate="G$1" pin="P$1"/>
 <junction x="353.06" y="86.36"/>
-</segment>
-<segment>
-<wire x1="360.68" y1="93.98" x2="360.68" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="P+6" gate="1" pin="+24V"/>
-<pinref part="LD5" gate="G$1" pin="A"/>
 </segment>
 <segment>
 <pinref part="R10" gate="G$1" pin="2"/>
@@ -20110,7 +20121,7 @@ Red LED for faults</text>
 <segment>
 <pinref part="LD1" gate="G$1" pin="C"/>
 <pinref part="R18" gate="G$1" pin="2"/>
-<wire x1="350.52" y1="215.9" x2="350.52" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="358.14" y1="215.9" x2="358.14" y2="210.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="24V_MON" class="0">
@@ -20366,6 +20377,16 @@ Red LED for faults</text>
 <wire x1="246.38" y1="71.12" x2="246.38" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="246.38" y1="71.12" x2="259.08" y2="71.12" width="0.1524" layer="91"/>
 <junction x="246.38" y="71.12"/>
+</segment>
+<segment>
+<wire x1="360.68" y1="170.18" x2="360.68" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="LD4" gate="G$1" pin="A"/>
+<pinref part="P+15" gate="1" pin="+5V"/>
+</segment>
+<segment>
+<wire x1="360.68" y1="93.98" x2="360.68" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="LD5" gate="G$1" pin="A"/>
+<pinref part="P+16" gate="1" pin="+5V"/>
 </segment>
 </net>
 <net name="N$19" class="0">
