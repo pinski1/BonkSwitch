@@ -18601,14 +18601,14 @@ reflow soldering</description>
 <part name="P+7" library="supply1" deviceset="VCC" device=""/>
 <part name="P+8" library="supply1" deviceset="VCC" device=""/>
 <part name="X1" library="con-amass" deviceset="XT60" device="PW-M">
-<attribute name="MF" value="Amass"/>
+<attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="PCB1" library="dp_devices" deviceset="PCB_DP_RECTANGLE" device="-100X62">
-<attribute name="MF" value="n/a"/>
-<attribute name="MPN" value="n/a"/>
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
 <part name="IC2" library="general" deviceset="LMR16006" device="" value="LMR16006XDDC">
@@ -18752,12 +18752,12 @@ reflow soldering</description>
 </part>
 <part name="GND40" library="supply1" deviceset="GND" device=""/>
 <part name="X2" library="con-amass" deviceset="XT30" device="PW-F">
-<attribute name="MF" value="Amass"/>
+<attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
 <part name="X3" library="con-amass" deviceset="XT30" device="PW-F">
-<attribute name="MF" value="Amass"/>
+<attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
@@ -18826,8 +18826,8 @@ reflow soldering</description>
 <attribute name="OC_FARNELL" value="2498548"/>
 </part>
 <part name="A1" library="ThingySticks" deviceset="FEATHERWING" device="_NODIM">
-<attribute name="MF" value="n/a"/>
-<attribute name="MPN" value="n/a"/>
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
 <part name="GND44" library="supply1" deviceset="GND" device=""/>
@@ -18958,8 +18958,8 @@ reflow soldering</description>
 </part>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="A2" library="general" deviceset="FRSKY_XM+" device="">
-<attribute name="MF" value="FrSky"/>
-<attribute name="MPN" value="XM"/>
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
 <part name="P+15" library="supply1" deviceset="+5V" device=""/>
