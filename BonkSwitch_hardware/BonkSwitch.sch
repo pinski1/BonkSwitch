@@ -18426,9 +18426,10 @@ reflow soldering</description>
 </part>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="D1" library="SparkFun-DiscreteSemi" deviceset="DIODE-ZENER" device="-MMSZ5232BS" value="5.6V">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_FARNELL" value="unknown"/>
+<attribute name="MF" value="ON SEMICONDUCTOR"/>
+<attribute name="MPN" value="MM3Z4V3ST1G"/>
+<attribute name="OC_FARNELL" value="2844819"/>
+<attribute name="OC_RS" value="802-4625"/>
 </part>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
@@ -18551,9 +18552,10 @@ reflow soldering</description>
 </part>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="D4" library="SparkFun-DiscreteSemi" deviceset="DIODE-ZENER" device="-MMSZ5232BS" value="5.6V">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_FARNELL" value="unknown"/>
+<attribute name="MF" value="ON SEMICONDUCTOR"/>
+<attribute name="MPN" value="MM3Z4V3ST1G"/>
+<attribute name="OC_FARNELL" value="2844819"/>
+<attribute name="OC_RS" value="802-4625"/>
 </part>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" deviceset="+24V" device=""/>
@@ -19049,6 +19051,7 @@ Red LED for faults</text>
 <attribute name="OC_FARNELL" x="33.02" y="116.84" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="33.02" y="116.84" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="33.02" y="116.84" size="1.778" layer="96" display="off"/>
+<attribute name="OC_RS" x="33.02" y="116.84" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="GND6" gate="1" x="33.02" y="106.68"/>
 <instance part="GND1" gate="1" x="347.98" y="106.68"/>
@@ -19174,6 +19177,7 @@ Red LED for faults</text>
 <attribute name="OC_FARNELL" x="88.9" y="116.84" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="88.9" y="116.84" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="88.9" y="116.84" size="1.778" layer="96" display="off"/>
+<attribute name="OC_RS" x="88.9" y="116.84" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="GND12" gate="1" x="88.9" y="106.68"/>
 <instance part="P+4" gate="1" x="68.58" y="142.24"/>

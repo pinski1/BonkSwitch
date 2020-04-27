@@ -5125,11 +5125,12 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="D1" library="SparkFun-DiscreteSemi" package="SOD-323" value="5.6V" x="9.525" y="55.245" smashed="yes" rot="R90">
 <attribute name="PROD_ID" value="DIO-12442" x="9.525" y="55.245" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="9.525" y="55.245" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MF" value="" x="9.525" y="55.245" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="" x="9.525" y="55.245" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_FARNELL" value="2844819" x="9.525" y="55.245" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="ON SEMICONDUCTOR" x="9.525" y="55.245" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="MM3Z4V3ST1G" x="9.525" y="55.245" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="10.033" y="57.785" size="1" layer="25" font="vector" ratio="11" rot="R90"/>
 <attribute name="VALUE" x="10.287" y="55.245" size="1" layer="27" font="vector" ratio="11" rot="R90" align="top-center"/>
+<attribute name="OC_RS" value="802-4625" x="9.525" y="55.245" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R11" library="rcl" package="R0805" value="10R" x="71.4375" y="32.385" smashed="yes" rot="R180">
 <attribute name="OC_FARNELL" value="unknown" x="71.4375" y="32.385" size="1.778" layer="27" rot="R180" display="off"/>
@@ -5277,11 +5278,12 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="D4" library="SparkFun-DiscreteSemi" package="SOD-323" value="5.6V" x="55.245" y="40.005" smashed="yes" rot="R90">
 <attribute name="PROD_ID" value="DIO-12442" x="65.405" y="34.925" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="55.245" y="40.005" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MF" value="" x="55.245" y="40.005" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="" x="55.245" y="40.005" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_FARNELL" value="2844819" x="55.245" y="40.005" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="ON SEMICONDUCTOR" x="55.245" y="40.005" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="MM3Z4V3ST1G" x="55.245" y="40.005" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="54.483" y="38.1" size="1" layer="25" font="vector" ratio="11" rot="R90" align="top-right"/>
 <attribute name="VALUE" x="56.007" y="40.005" size="1" layer="27" font="vector" ratio="11" rot="R90" align="top-center"/>
+<attribute name="OC_RS" value="802-4625" x="55.245" y="40.005" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R1" library="rcl" package="R0603" value="2k2" x="76.835" y="40.64" smashed="yes" rot="R90">
 <attribute name="OC_FARNELL" value="unknown" x="76.835" y="40.64" size="1.778" layer="27" rot="R90" display="off"/>
