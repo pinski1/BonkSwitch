@@ -1,31 +1,44 @@
 # Bonk Switch - Design Verification Test Plan
-Need to test the design to verifiy it meets the specification.
+Need to test the design to verify it meets the specification.
+
+## Equipment Required
+
+|Equipment|Model|Serial Number|
+|---------|-----|-------------|
+|PSU, 60V 3A|||
+|XT60 cable|||
+|XT30 10Ω load|||
+|Multi-meter|||
+|Oscilloscope|||
+|Oscilloscope probes|||
+|USB Micro cable|||
 
 ## Test Plan
 
-|Test|Description|Criteria|Pass |Fail |Notes|
-|----|-----------|--------|-----|-----|-----|
-|Visually inspect the board|Is anything out of place?|Shorts| [ ] | [ ] | |
-|||Tombstoning| [ ] | [ ] | |
-|||PCB Faults| [ ] | [ ] | |
-|||Cold joints| [ ] | [ ] | |
-|||Serial Number present| [ ] | [ ] | |
-
-* VCC/+24V/+5V/+3V3 not shorted to GND
+|Test|Description|Criteria|Pass |Notes|
+|----|-----------|--------|-----|-----|
+|Visually inspect the board|Is anything out of place?|Shorts|❌| |
+|||Tombstoning|❌| |
+|||PCB Faults|❌| |
+|||Cold joints|❌| |
+|||Serial Number present|❌| |
+|Test for Shorts|Multi-meter on conitinuity mode||
+|||OC between VCC (TP3) & GND|❌| |
+|||OC between +24V (TP1) & GND|❌| |
+|||OC between +5V (TP2) & GND|❌| |
+|||OC between +3V3 (A1.p2) & GND|❌| |
 
 Remove the Feather for the following tests.
 
 Apply current limited +40V @ ?mA power via the XT60.
 
-|Test|Description|Criteria|Pass |Fail |Notes|
-|----|-----------|--------|-----|-----|-----|
-|    |           |        | [ ] | [ ] |     |
+|Test|Description|Criteria|Pass |Notes|
+|----|-----------|--------|-----|-----|
+|    |           |        |❌| |
+|Measure the voltage|VCC (TP3) & GND |VCC ±5%|❌| |
+||+5V (TP2) & GND|+4.75V & +5.25V|❌| |
+||+24V (TP1) & GND|0V & +0.08V|❌| |
 
-
-* Measure the voltage at:
-  * TP3		VCC �5%
-  * TP2		+5V �5%
-  * TP1		0V
 * +5V LED (LD2) lit
 * +24V LED (LD1) unlit
 * Fault LED (LD3) unlit
@@ -34,10 +47,12 @@ Apply current limited +40V @ ?mA power via the XT60.
 
 Place a jumper between pin 25 and pin 4 on the Feather to enable the +24V SMPS.
 
-* Measure the voltage at:
-  * TP1		+24V �10%
-* no hot spots with all rails powered
+|Test|Description|Criteria|Pass |Notes|
+|----|-----------|--------|-----|-----|
+|Measure the voltage|+24V (TP1) & GND |+21.60V & +26.40V|❌| |
+
 * +24V LED (LD1) lit
+* no hot spots with all rails powered
 
 Remove power to board and jumper.
 
@@ -47,9 +62,9 @@ Fit Feather to board.
 
 Apply current limited +40V @ ?mA power via the XT60.
 
-|Test|Description|Criteria|Pass |Fail |Notes|
-|----|-----------|--------|-----|-----|-----|
-|    |           |        | [ ] | [ ] |     |
+|Test|Description|Criteria|Pass |Notes|
+|----|-----------|--------|-----|-----|
+|    |           |        |❌|     |
 
 
 * Verify LEDs on feather light up
@@ -69,7 +84,9 @@ Apply current limited +40V @ ?mA power via the XT60.
 
 ## Test Conclusion
 
-
-
+1. Fault
+   1. PCB mod
+   2. PCB fix
+  
 
 
