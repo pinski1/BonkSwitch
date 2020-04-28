@@ -51,11 +51,11 @@ Place a jumper between pin 25 and pin 4 on the Feather to enable the +24V SMPS.
 |----|-----------|--------|-----|-----|
 |Measure the voltage|+24V (TP1) & GND |+21.60V & +26.40V|❌| |
 |Check LEDs|+24V LED (LD1)|lit|❌| |
-|Check Board Temp|USe thermal camera|No hot spots|❌| |
+|Check Board Temp|Use thermal camera|No hot spots|❌| |
 
-Remove power to board and jumper.
+Remove power to board and jumper wire.
 
-Program Feather with test script.
+Program Feather with bringup firmware.
 
 Fit Feather to board.
 
@@ -65,25 +65,25 @@ Apply current limited +40V @ 3A power via the XT60.
 |----|-----------|--------|-----|-----|
 |Feather powered|Check LEDs on feather|lit|❌| |
 |Feather communicating|Plug USB cable in|Characters on terminal|❌| |
-|ADC reading correctly|VCC_MON|raw: xxx to xxx|❌| |
-||+5V_MON|raw: xxx to xxx|❌| |
-||I_SW1_MON|raw: xxx to xxx|❌| |
-||I_SW2_MON|raw: xxx to xxx|❌| |
+|ADC reading correctly|VCC_MON|raw: xxxx to xxxx|❌| |
+||+5V_MON|raw: xxxx to xxxx|❌| |
 |Feather controls +24V|Enable +24V SMPS|TP1 +21.60V & +26.40V|❌| |
 |Check LEDs|Fault LED (LD3)|lit|❌| |
 |ADC reading correctly|+24V_MON|raw: xxx to xxx|❌| |
 
-* FrSky RX testing
-   * recieving FrSky packets
-   * able to bind FrSky to RX
-   * can see sticks moving
 * MOSFET switch testing
    * check MOSFETs are driven on with minimal ringing
    * check MOSFET on resistance is reasonable
    * check SW1 is feather controlled
    * check SW2 is feather controlled
    * check against load of 10Ω
-   * check current if I_SW\*_MON
+||I_SW1_MON|raw: 0 to xxxx|❌| |
+||I_SW2_MON|raw: 0 to xxxx|❌| |
+
+* FrSky RX testing
+   * recieving FrSky packets
+   * able to bind FrSky to RX
+   * can see sticks moving
 * confirm operation when VCC >50V and <35V
 
 ## Test Conclusion
