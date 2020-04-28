@@ -30,7 +30,7 @@ Need to test the design to verify it meets the specification.
 
 Remove the Feather for the following tests.
 
-Apply current limited +40V @ ?mA power via the XT60.
+Apply current limited +40V @ 3A power via the XT60.
 
 |Test|Description|Criteria|Pass |Notes|
 |----|-----------|--------|-----|-----|
@@ -38,12 +38,11 @@ Apply current limited +40V @ ?mA power via the XT60.
 |Measure the voltage|VCC (TP3) & GND |VCC ±5%|❌| |
 ||+5V (TP2) & GND|+4.75V & +5.25V|❌| |
 ||+24V (TP1) & GND|0V & +0.08V|❌| |
-
-* +5V LED (LD2) lit
-* +24V LED (LD1) unlit
-* Fault LED (LD3) unlit
-* SW1 LED (LD4) unlit
-* SW2 LED (LD5) unlit
+|Check LEDs|+5V LED (LD2)|lit|❌| |
+||+24V LED (LD1)|unlit|❌| |
+||Fault LED (LD3)|unlit|❌| |
+||SW1 LED (LD4)|unlit|❌| |
+||SW2 LED (LD5)|unlit|❌| |
 
 Place a jumper between pin 25 and pin 4 on the Feather to enable the +24V SMPS.
 
@@ -74,7 +73,8 @@ Apply current limited +40V @ ?mA power via the XT60.
   * +5V_MON
   * +24V_MON
 * verify the feather can control the +24V supply
-* verify the fault LED (LD3) lights
+
+|Check LEDs|Fault LED (LD3)|lit|❌| |
 
 * Something about FrSky reciever testing
 
