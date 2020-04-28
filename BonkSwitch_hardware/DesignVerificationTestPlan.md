@@ -12,6 +12,7 @@ Need to test the design to verify it meets the specification.
 |Oscilloscope|||
 |Oscilloscope probes|||
 |USB Micro cable|||
+|Thermal Camera|||
 
 ## Test Plan
 
@@ -49,9 +50,8 @@ Place a jumper between pin 25 and pin 4 on the Feather to enable the +24V SMPS.
 |Test|Description|Criteria|Pass |Notes|
 |----|-----------|--------|-----|-----|
 |Measure the voltage|+24V (TP1) & GND |+21.60V & +26.40V|❌| |
-
-* +24V LED (LD1) lit
-* no hot spots with all rails powered
+|Check LEDs|+24V LED (LD1)|lit|❌| |
+|Check Board Temp|USe thermal camera|No hot spots|❌| |
 
 Remove power to board and jumper.
 
@@ -59,32 +59,36 @@ Program Feather with test script.
 
 Fit Feather to board.
 
-Apply current limited +40V @ ?mA power via the XT60.
+Apply current limited +40V @ 3A power via the XT60.
 
 |Test|Description|Criteria|Pass |Notes|
 |----|-----------|--------|-----|-----|
-|    |           |        |❌|     |
-
-
-* Verify LEDs on feather light up
-* connect to feather via USB serial
-* record voltages/raw ADC values for
-  * VCC_MON
-  * +5V_MON
-  * +24V_MON
-* verify the feather can control the +24V supply
-
+|Feather powered|Check LEDs on feather|lit|❌| |
+|Feather communicating|Plug USB cable in|Characters on terminal|❌| |
+|ADC reading correctly|VCC_MON|raw: xxx to xxx|❌| |
+||+5V_MON|raw: xxx to xxx|❌| |
+||I_SW1_MON|raw: xxx to xxx|❌| |
+||I_SW2_MON|raw: xxx to xxx|❌| |
+|Feather controls +24V|Enable +24V SMPS|TP1 +21.60V & +26.40V|❌| |
 |Check LEDs|Fault LED (LD3)|lit|❌| |
+|ADC reading correctly|+24V_MON|raw: xxx to xxx|❌| |
 
-* Something about FrSky reciever testing
-
+* FrSky RX testing
+   * recieving FrSky packets
+   * able to bind FrSky to RX
+   * can see sticks moving
 * MOSFET switch testing
-
+   * check MOSFETs are driven on with minimal ringing
+   * check MOSFET on resistance is reasonable
+   * check SW1 is feather controlled
+   * check SW2 is feather controlled
+   * check against load of 10Ω
+   * check current if I_SW\*_MON
 * confirm operation when VCC >50V and <35V
 
 ## Test Conclusion
 
-1. Fault
+1. Fault with design
    1. PCB mod
    2. PCB fix
   
