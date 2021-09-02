@@ -1,6 +1,6 @@
 /** BonkSwitch
  *
- *
+ * See https://www.ti.com/tool/TIDA-00289
  *
  *
  * Written for the [Adafruit Feather M0 Basic Proto](https://www.adafruit.com/product/2772)
